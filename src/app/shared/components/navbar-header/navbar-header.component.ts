@@ -18,7 +18,7 @@ export class NavbarHeaderComponent implements OnInit {
       {
         name: 'Home',
         icon: 'uil uil-home',
-        router: ['/', ''],
+        router: ['/', 'main'],
       },
       {
         name: 'Premiere',

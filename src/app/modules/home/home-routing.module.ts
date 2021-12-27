@@ -12,6 +12,15 @@ const routes: Routes = [
     loadChildren: () =>
       import(`@modules/movies/movies.module`).then((m) => m.MoviesModule),
   },
+  {
+    path: 'main',
+    loadChildren: () =>
+      import(`@modules/main/main.module`).then((m) => m.MainModule),
+  },
+  {
+    path: '**',
+    redirectTo: '/main',
+  },
 ];
 
 @NgModule({

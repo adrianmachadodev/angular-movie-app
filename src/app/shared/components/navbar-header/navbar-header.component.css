@@ -1,0 +1,44 @@
+.navbar {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  text-align: center;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+  padding: 0.25rem;
+}
+
+ul li {
+  display: table-cell;
+  cursor: pointer;
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 3px;
+  background-color: brown;
+}
+
+button:hover {
+  background-color: aqua;
+  transition: 0.8s all ease;
+}
+
+/* size mobile */
+@media (max-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

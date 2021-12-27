@@ -1,0 +1,18 @@
+<div class="navbar">
+  <div class="logo">Logo</div>
+  <div class="nav-item">
+    <ul>
+      <li
+        [routerLink]="item.router"
+        *ngFor="let item of mainMenu.defaultOptions"
+        routerLinkActive="router-link-active"
+      >
+        <i [ngClass]="['uil', item.icon]"></i>
+        <span>{{ item.name }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="Login">
+    <button>Log in</button>
+  </div>
+</div>
